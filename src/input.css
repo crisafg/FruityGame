@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card{
+    @apply bg-blue-700 rounded flex justify-center items-center;
+}
+
+.fruitImg{
+    @apply  mx-auto w-16 h-16 items-center absolute;
+}
+
+.btn{
+    @apply bg-gradient-to-r-n  bg-blue-500  w-36 rounded-[2.5rem] relative right-10 cursor-pointer flex  justify-center items-center hover:scale-110;
+}
+
+/* fruits */
+.apple{
+    @apply bg-[url(/fruits/apple.png)] bg-no-repeat  bg-center;
+}
+
+.cherries{
+    @apply bg-[url(/fruits/cherries.png)] bg-no-repeat bg-center;
+}
+.grapes{
+    @apply bg-[url(/fruits/grapes.png)] bg-no-repeat bg-center;
+}
+
+.kiwi{
+    @apply bg-[url(/fruits/kiwi.png)] bg-no-repeat bg-center;
+}
+.lemon{
+    @apply bg-[url(/fruits/lemon.png)] bg-no-repeat bg-center;
+}
+
+.orange{
+    @apply bg-[url(/fruits/orange.png)] bg-no-repeat bg-center;
+}
+.pineapple{
+    @apply bg-[url(/fruits/pineapple.png)] bg-no-repeat bg-center;
+}
+.watermelon{
+    @apply bg-[url(/fruits/watermelon.png)] bg-no-repeat bg-center;
+}
+
+

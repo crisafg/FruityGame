@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fruity game</title>
+    <link rel="stylesheet" href="/dist/output.css" />
+  </head>
+  <body class="bg-cover" style="background-image: url('/imgs/bg.png')">
+    <div class="flex flex-col items-center justify-center">
+      <h1
+        class="relative top-3 text-center text-3xl font-bold uppercase text-blue-800"
+      >
+        Fruity game
+      </h1>
+      <p
+        class="before:: relative top-6 text-3xl font-bold uppercase text-slate-900"
+      >
+        Can you beat the Fruity Game?
+      </p>
+      <p
+        class="after:: relative top-6 text-3xl font-bold uppercase text-slate-900"
+      >
+        Get three in a row!
+      </p>
+    </div>
+    <div
+      id="container"
+      class="relative top-12 mb-8 flex flex-wrap items-start justify-center"
+    >
+      <div
+        class="victory absolute left-12 hidden flex-col flex-wrap items-center"
+      >
+        <img src="/imgs/dancing.gif" alt="" />
+        <p class="text-center text-4xl font-bold uppercase text-red-600">
+          You win!!!
+        </p>
+      </div>
+
+      <div
+        class="pair absolute left-40 hidden animate-pulse text-8xl transition-all delay-500 duration-200"
+      >
+        PAIR
+      </div>
+      <div
+        id="main"
+        class="mx-auto grid h-96 w-[36rem] transform-gpu grid-cols-4 grid-rows-3 gap-6"
+      >
+        <div id="btn_1" class="btn">
+          <p class="whitespace-nowrap text-xl font-bold uppercase">Press me</p>
+        </div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+
+        <div id="btn_2" class="btn row-start-2">
+          <p class="whitespace-nowrap text-xl font-bold uppercase">Press me</p>
+        </div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+
+        <div id="btn_3" class="btn row-start-3">
+          <p class="whitespace-nowrap text-xl font-bold uppercase">Press me</p>
+        </div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+      </div>
+    </div>
+
+    <footer class="flex justify-center">
+      <button
+        class="reset mt-8 rounded-full bg-gray-400 p-4 text-center text-xl font-semibold uppercase hover:scale-105"
+      >
+        Play again
+      </button>
+    </footer>
+  </body>
+  <script src="/src/script.js"></script>
+</html>
