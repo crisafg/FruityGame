@@ -36,9 +36,9 @@ frstBtn.addEventListener('click',()=>{
             card.appendChild(fruitCard);
         }
         })
-            let first= frstThree[0].childNodes[1].childNodes[0].alt;
-            let scnd= frstThree[1].childNodes[1].childNodes[0].alt;
-            let thrd= frstThree[2].childNodes[1].childNodes[0].alt;
+            let first= frstThree[0].childNodes[0].childNodes[0].alt;
+            let scnd= frstThree[1].childNodes[0].childNodes[0].alt;
+            let thrd= frstThree[2].childNodes[0].childNodes[0].alt;
             
             if (first === scnd && first === thrd) {
                     win.style.display='flex';
@@ -64,9 +64,9 @@ scndBtn.addEventListener('click',()=>{
             card.appendChild(fruitCard);       
         }
     })
-    let first= scndThree[0].childNodes[1].childNodes[0].alt;
-    let scnd= scndThree[1].childNodes[1].childNodes[0].alt;
-    let thrd= scndThree[2].childNodes[1].childNodes[0].alt;
+    let first= scndThree[0].childNodes[0].childNodes[0].alt;
+    let scnd= scndThree[1].childNodes[0].childNodes[0].alt;
+    let thrd= scndThree[2].childNodes[0].childNodes[0].alt;
     
     if (first === scnd && first === thrd) {
             win.style.display='flex';
@@ -91,9 +91,9 @@ thrdBtn.addEventListener('click',()=>{
             card.appendChild(fruitCard);
         }
     })
-    let first= thrdThree[0].childNodes[1].childNodes[0].alt;
-    let scnd= thrdThree[1].childNodes[1].childNodes[0].alt;
-    let thrd= thrdThree[2].childNodes[1].childNodes[0].alt;
+    let first= thrdThree[0].childNodes[0].childNodes[0].alt;
+    let scnd= thrdThree[1].childNodes[0].childNodes[0].alt;
+    let thrd= thrdThree[2].childNodes[0].childNodes[0].alt;
     
     if (first === scnd && first === thrd) {
             win.style.display='flex';
@@ -108,7 +108,7 @@ thrdBtn.addEventListener('click',()=>{
 reset.addEventListener('click', ()=>{
     cardElements.forEach((card, index)=>{
         if(card.querySelector('.fruitImg')){
-            card.childNodes[1].remove();
+            card.childNodes[0].remove();
             pair.style.display='';
             win.style.display='';
         }
