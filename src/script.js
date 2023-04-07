@@ -42,6 +42,7 @@ frstBtn.addEventListener('click',()=>{
             
             if (first === scnd && first === thrd) {
                     win.style.display='flex';
+                    pair.style.display='';
                 }
             if(first===scnd&& first!== thrd 
                 || scnd===thrd && scnd!==first 
@@ -70,6 +71,7 @@ scndBtn.addEventListener('click',()=>{
     
     if (first === scnd && first === thrd) {
             win.style.display='flex';
+            pair.style.display='';
         }
         if(first===scnd&& first!== thrd 
             || scnd===thrd && scnd!==first 
@@ -97,6 +99,7 @@ thrdBtn.addEventListener('click',()=>{
     
     if (first === scnd && first === thrd) {
             win.style.display='flex';
+            pair.style.display='';
         }
         if(first===scnd&& first!== thrd 
             || scnd===thrd && scnd!==first 
